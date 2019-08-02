@@ -7,12 +7,8 @@ namespace WebApi.Models
         public int Id {get; set;}
         public string Name {get; set;}
         public string Manufacturer {get; set;}
-       
-        
-        public ICollection<Cpu> CpuLoad { get; set;}
-               
+        public ICollection<Processor> CpuLoad { get; set;}
         public ICollection<Memory> MemoryLoad  {get; set; }
-        
         public IList<User>  Users {get; set;}
     }
 }
